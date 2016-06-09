@@ -61,7 +61,7 @@ function Any() {
 	}
 }
 
-function Function(returnConstraint, paramsConstraint) {
+function Function(...ioConstraints) {
 	return { 
 		instanceTest: function(instance) {
 			
