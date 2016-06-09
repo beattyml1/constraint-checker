@@ -1,7 +1,3 @@
-function Null() {
-	return Value(null);
-}
-
 function And(left, right) {
 	return { 
 		instanceTest: function(instance) {
@@ -110,7 +106,19 @@ function Value(value) {
 }
 
 function Type(type) {
-	
+	return { 
+		instanceTest: function(instance) {
+			
+		},
+
+		constraintTest: function(constraint) {
+
+		}
+	}
+}
+
+function Null() {
+	return Value(null);
 }
 
 int = "int";
